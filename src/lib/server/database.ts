@@ -1,6 +1,6 @@
 import Database from "better-sqlite3";
 
-export const db = new Database("solur.org");
+export const db = new Database("src/lib/server/solur.db");
 db.pragma("journal_mode = WAL");
 
 const stmt = db.prepare(`
