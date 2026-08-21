@@ -4,8 +4,6 @@
   import NewsletterPreview from "$lib/components/newsletter-preview.svelte";
 
   let { data } = $props();
-
-  let minecraft = $derived(data.minecraft);
 </script>
 
 <img
@@ -42,19 +40,27 @@
     class="mx-auto prose-xl grid w-full max-w-4xl grid-cols-1 place-items-center items-start md:grid-cols-2"
   >
     <div>
-      <h3 class="mb-0!">
-        Minecraft
-        <span class="text-lg">v{minecraft.version}</span>
-      </h3>
-      <div>
-        {@html minecraft.motd.html[0]}
-      </div>
-      <p>
-        <span class="font-semibold">
-          {minecraft.players.online}
-        </span>
-        players online
-      </p>
+      {#await data.minecraft}
+        <h3 class="mb-0!">Minecraft</h3>
+        <p>Loading...</p>
+      {:then minecraft}
+        <h3 class="mb-0!">
+          Minecraft
+          <span class="text-lg">v{minecraft.version}</span>
+        </h3>
+        <div>
+          {@html minecraft.motd.html[0]}
+        </div>
+        <p>
+          <span class="font-semibold">
+            {minecraft.players.online}
+          </span>
+          players online
+        </p>
+      {:catch}
+        <h3 class="mb-0!">Minecraft</h3>
+        <p>Error loading server information</p>
+      {/await}
     </div>
     <div>
       <h3 class="mb-0!">Mods</h3>

@@ -3,8 +3,11 @@ import { db } from "$lib/server/database";
 import type { Minecraft, NewsPreview } from "$lib/types";
 
 export async function load() {
-  const response = await fetch(`https://api.mcsrvstat.us/3/${MINECRAFT_HOST}`);
-  const minecraft: Minecraft = await response.json();
+  const minecraft: Promise<Minecraft> = fetch(`https://api.mcsrvstat.us/3/${MINECRAFT_HOST}`).then(
+    async (response) => await response.json()
+  );
+
+  minecraft.catch(() => {});
 
   const news = db
     .prepare(
