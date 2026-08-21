@@ -2,23 +2,28 @@ FROM node:24 AS build
 
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME/bin:$PATH"
-ENV CI=true
+ENV NODE_OPTIONS="--max_old_space_size=8192"
 
 RUN corepack enable
 
 WORKDIR /app
-COPY . .
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
-    pnpm install --frozen-lockfile
 
-RUN pnpm build
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+RUN pnpm install --frozen-lockfile
+
+COPY . .
+RUN pnpm run build
 
 FROM node:24
-WORKDIR /app
-ENV NODE_ENV=production
-ENV ORIGIN=https://solur.org
 
-COPY --from=build /app/build/ .
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME/bin:$PATH"
+
+WORKDIR /app
+
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/build ./build
+
 EXPOSE 3000
 
 CMD ["node", "build"]
