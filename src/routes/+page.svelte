@@ -1,16 +1,20 @@
 <script lang="ts">
   import banner from "$lib/assets/banner.avif";
+  import wave from "$lib/assets/chibi-netbrum-1024-wave.gif";
   import NewsletterPreview from "$lib/components/newsletter-preview.svelte";
 
   let { data } = $props();
 </script>
 
-<enhanced:img
-  src={banner}
-  alt="Banner featuring multiple minecraft screenshots"
-  class="brightness-40 select-none"
-  fetchpriority="high"
-/>
+<div class="relative">
+  <enhanced:img
+    src={banner}
+    alt="Banner featuring multiple minecraft screenshots"
+    class="brightness-40 select-none"
+    fetchpriority="high"
+  />
+  <img src={wave} class="absolute bottom-0 left-0 size-32 translate-y-1/3 md:size-64" />
+</div>
 
 <section class="grow bg-white px-4 py-16 text-black">
   <div class="mx-auto prose w-full max-w-4xl">
