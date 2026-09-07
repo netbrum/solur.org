@@ -77,6 +77,9 @@
         <li>
           <a target="_blank" href="https://modrinth.com/mod/LOpKHB2A">Waystones</a> by BlayTheNinth
         </li>
+        <li>
+          <a target="_blank" href="https://modrinth.com/mod/P7dR8mSH">Fabric API</a> by FabricMC
+        </li>
       </ul>
     </div>
   </div>
