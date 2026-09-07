@@ -11,7 +11,7 @@
 
 <svelte:head>
   <link rel="icon" href={favicon} />
-  <title>Sundial</title>
+  <title>Solur</title>
 </svelte:head>
 
 <div class="flex min-h-screen flex-col bg-mist-900 text-white">
