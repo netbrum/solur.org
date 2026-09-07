@@ -13,7 +13,11 @@
     class="brightness-40 select-none"
     fetchpriority="high"
   />
-  <img src={wave} class="absolute bottom-0 left-0 size-32 translate-y-1/3 md:size-64" />
+  <img
+    src={wave}
+    alt="Chibi character waving"
+    class="absolute bottom-0 left-0 size-32 translate-y-1/3 md:size-64"
+  />
 </div>
 
 <section class="grow bg-white px-4 py-16 text-black">
