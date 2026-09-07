@@ -6,6 +6,10 @@ export type Minecraft = {
   players: {
     online: number;
     max: number;
+    list?: {
+      name: string;
+      uuid: string;
+    }[];
   };
   motd: {
     raw: string[];
