@@ -7,7 +7,7 @@
 </script>
 
 <div class="relative">
-  <enhanced:img
+  <img
     src={banner}
     alt="Banner featuring multiple minecraft screenshots"
     class="brightness-40 select-none"
