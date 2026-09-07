@@ -1,15 +1,15 @@
 <script lang="ts">
-  /* eslint-disable svelte/no-at-html-tags */
   import banner from "$lib/assets/banner.avif";
   import NewsletterPreview from "$lib/components/newsletter-preview.svelte";
 
   let { data } = $props();
 </script>
 
-<img
+<enhanced:img
   src={banner}
-  alt="banner featuring multiple minecraft screenshots"
+  alt="Banner featuring multiple minecraft screenshots"
   class="brightness-40 select-none"
+  fetchpriority="high"
 />
 
 <section class="grow bg-white px-4 py-16 text-black">
@@ -48,9 +48,6 @@
           Minecraft
           <span class="text-lg">v{minecraft.version}</span>
         </h3>
-        <div>
-          {@html minecraft.motd.html[0]}
-        </div>
         <p>
           <span class="font-semibold">
             {minecraft.players.online}
