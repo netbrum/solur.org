@@ -1,6 +1,6 @@
 <script lang="ts">
   /* eslint-disable svelte/no-at-html-tags */
-  import banner from "$lib/assets/banner.png";
+  import banner from "$lib/assets/banner.avif";
   import NewsletterPreview from "$lib/components/newsletter-preview.svelte";
 
   let { data } = $props();
