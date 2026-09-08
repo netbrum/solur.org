@@ -38,7 +38,12 @@
               {#if screenshot.description}
                 <p class="my-0!">{screenshot.description}</p>
               {/if}
-              <small>{screenshot.taken_at}</small>
+              <small>
+                {new Date(screenshot.taken_at).toLocaleString(undefined, {
+                  dateStyle: "long",
+                  timeStyle: "medium"
+                })}
+              </small>
             </div>
           {/each}
         </div>
