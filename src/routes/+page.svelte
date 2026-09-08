@@ -52,29 +52,34 @@
         <h3 class="mb-0!">Minecraft</h3>
         <p>Loading...</p>
       {:then minecraft}
-        <h3 class="mb-0!">
-          Minecraft
-          <span class="text-lg">v{minecraft.version}</span>
-        </h3>
-        <div>
-          <p>
-            <span class="font-semibold">
-              {minecraft.players.online}
-            </span>
-            players online
-          </p>
-          {#if minecraft.players.list}
-            <div class="grid grid-cols-5 gap-2">
-              {#each minecraft.players.list as player (player.uuid)}
-                <img
-                  class="m-0! size-8"
-                  src={`https://mc-heads.net/avatar/${player.uuid}`}
-                  alt={`${player.name} head`}
-                />
-              {/each}
-            </div>
-          {/if}
-        </div>
+        {#if minecraft.online}
+          <h3 class="mb-0!">
+            Minecraft
+            <span class="text-lg">v{minecraft.version}</span>
+          </h3>
+          <div>
+            <p>
+              <span class="font-semibold">
+                {minecraft.players.online}
+              </span>
+              players online
+            </p>
+            {#if minecraft.players.list}
+              <div class="grid grid-cols-5 gap-2">
+                {#each minecraft.players.list as player (player.uuid)}
+                  <img
+                    class="m-0! size-8"
+                    src={`https://mc-heads.net/avatar/${player.uuid}`}
+                    alt={`${player.name} head`}
+                  />
+                {/each}
+              </div>
+            {/if}
+          </div>
+        {:else}
+          <h3 class="mb-0!">Minecraft</h3>
+          <p>Server offline Σ(°ロ°)</p>
+        {/if}
       {:catch}
         <h3 class="mb-0!">Minecraft</h3>
         <p>Error loading server information</p>
