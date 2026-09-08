@@ -33,3 +33,10 @@ export type News = {
   content: string;
   published_at: string;
 };
+
+export type Screenshot = {
+  id: string;
+  path: string;
+  description?: string;
+  taken_at: string;
+};

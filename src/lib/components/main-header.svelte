@@ -11,6 +11,7 @@
   <nav>
     <ul class="flex flex-wrap items-center gap-8 text-base underline">
       <li><a href={resolve("/newsletter")}>Newsletter</a></li>
+      <li><a href={resolve("/gallery")}>Gallery</a></li>
       <li>
         <a target="_blank" href="https://bluemap.solur.org">Bluemap</a>
       </li>
