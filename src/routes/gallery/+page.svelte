@@ -29,12 +29,14 @@
         <div class="grid-col-1 grid gap-16 md:grid-cols-2 lg:grid-cols-3">
           {#each screenshots as screenshot (screenshot.id)}
             <div class="text-center">
-              <img
-                use:lazyLoad={screenshot.path}
-                class="my-2! transition-opacity duration-1000"
-                src={screenshot.path}
-                alt={screenshot.description}
-              />
+              <button onclick={(e) => e.currentTarget.requestFullscreen()}>
+                <img
+                  use:lazyLoad={screenshot.path}
+                  class="my-2! transition-opacity duration-1000"
+                  src={screenshot.path}
+                  alt={screenshot.description}
+                />
+              </button>
               {#if screenshot.description}
                 <p class="my-0!">{screenshot.description}</p>
               {/if}
