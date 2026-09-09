@@ -8,7 +8,6 @@ export const lazyLoad = (image: HTMLImageElement, src: string) => {
   image.style.opacity = "0";
 
   const loaded = () => {
-    console.log("loaded", src);
     image.style.opacity = "1";
   };
 
