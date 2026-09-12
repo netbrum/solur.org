@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { resolve } from "$app/paths";
   import banner from "$lib/assets/banner.avif";
   import wave from "$lib/assets/chibi-netbrum-1024-wave.gif";
   import NewsletterPreview from "$lib/components/newsletter-preview.svelte";
@@ -7,6 +8,13 @@
 </script>
 
 <div class="relative">
+  {#if !data.wonderland}
+    <a
+      class="absolute top-[18%] left-[16%] z-50 size-2"
+      href={resolve("/wonderland")}
+      aria-label="wonderland"
+    ></a>
+  {/if}
   <img
     src={banner}
     alt="Banner featuring multiple minecraft screenshots"

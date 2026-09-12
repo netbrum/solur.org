@@ -2,7 +2,7 @@ import { MINECRAFT_HOST } from "$lib/consts";
 import { db } from "$lib/server/database";
 import type { Minecraft, NewsPreview } from "$lib/types";
 
-export async function load() {
+export async function load(event) {
   const minecraft: Promise<Minecraft> = fetch(`https://api.mcsrvstat.us/3/${MINECRAFT_HOST}`).then(
     async (response) => await response.json()
   );
@@ -13,8 +13,11 @@ export async function load() {
     )
     .all() as NewsPreview[];
 
+  const wonderland = event.cookies.get("wonderland");
+
   return {
     minecraft,
-    news
+    news,
+    wonderland: wonderland === "true"
   };
 }
