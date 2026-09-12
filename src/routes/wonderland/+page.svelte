@@ -1,6 +1,6 @@
 <script lang="ts">
   import eyes from "$lib/assets/eyes.gif";
-  import noise from "$lib/assets/static.gif";
+  import noise from "$lib/assets/noise.gif";
   import { onMount } from "svelte";
   import { blur } from "svelte/transition";
   import { goto } from "$app/navigation";
@@ -52,7 +52,7 @@
       <p>There is no such thing as a curse :)</p>
     </div>
   {/if}
-  <img src={noise} alt="Static" class="absolute top-0 left-0 h-full w-full opacity-10" />
+  <img src={noise} alt="Noise" class="absolute top-0 left-0 h-full w-full opacity-10" />
   <img src={eyes} alt="Eyes moving" class="opacity-25" />
   <div class="flex items-center">
     <p class="translate-y-10 translate-z-5 animate-shake text-4xl opacity-5">{messages[0]}</p>
