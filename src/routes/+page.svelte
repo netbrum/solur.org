@@ -116,19 +116,22 @@
       <h3 class="mb-0!">Mods*</h3>
       <ul class="text-base [&>li>a]:underline">
         <li>
-          <a target="_blank" href="https://modrinth.com/mod/P7dR8mSH">Fabric API</a> by FabricMC
+          <a target="_blank" href="https://modrinth.com/mod/P7dR8mSH">Fabric API</a> [0.161.0+26.2] by
+          FabricMC
         </li>
         <li>
-          <a target="_blank" href="https://modrinth.com/mod/9dzLWnmZ">Camerapture</a> by chrrrs
+          <a target="_blank" href="https://modrinth.com/mod/9dzLWnmZ">Camerapture</a> [1.10.15] by chrrrs
         </li>
         <li>
-          <a target="_blank" href="https://modrinth.com/mod/BITzwT7B">ClickVillagers</a> by Clickism
+          <a target="_blank" href="https://modrinth.com/mod/BITzwT7B">ClickVillagers</a> [1.6.7+26.2-fabric]
+          by Clickism
         </li>
         <li>
-          <a target="_blank" href="https://modrinth.com/mod/YOs4tZea">Joy of Painting</a> by xerca
+          <a target="_blank" href="https://modrinth.com/mod/YOs4tZea">Joy of Painting</a> [26.2-1.0.0]
+          by xerca
         </li>
         <li>
-          <a target="_blank" href="https://modrinth.com/mod/LOpKHB2A">Waystones</a> by BlayTheNinth
+          <a target="_blank" href="https://modrinth.com/mod/LOpKHB2A">Waystones</a> [26.2.0.12] by BlayTheNinth
         </li>
       </ul>
       <small>

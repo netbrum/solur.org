@@ -17,31 +17,31 @@
       <li>
         <a target="_blank" class="text-yellow-500" href="https://modrinth.com/mod/P7dR8mSH"
           >Fabric API</a
-        > by FabricMC
+        > [0.161.0+26.2] by FabricMC
       </li>
       <li>
         <a target="_blank" class="text-yellow-500" href="https://modrinth.com/mod/9dzLWnmZ"
           >Camerapture</a
-        > by chrrrs
+        > [1.10.15] by chrrrs
       </li>
       <li>
         <a target="_blank" class="text-yellow-500" href="https://modrinth.com/mod/BITzwT7B"
           >ClickVillagers</a
-        > by Clickism
+        > [1.6.7+26.2-fabric] by Clickism
       </li>
       <li>
         <a target="_blank" class="text-yellow-500" href="https://modrinth.com/mod/YOs4tZea"
           >Joy of Painting</a
-        > by xerca
+        > [26.2-1.0.0] by xerca
       </li>
       <li>
         <a target="_blank" class="text-yellow-500" href="https://modrinth.com/mod/LOpKHB2A"
           >Waystones</a
-        > by BlayTheNinth
+        > [26.2.0.12] by BlayTheNinth
       </li>
       <li>
-        <a target="_blank" href="https://modrinth.com/mod/9eGKb6K1">Simple Voice Chat</a> by Max
-        Henkel
+        <a target="_blank" href="https://modrinth.com/mod/9eGKb6K1">Simple Voice Chat</a>
+        [2.6.24+26.2] by Max Henkel
         <ul>
           <li>
             <a target="_blank" class="text-cyan-500" href="https://modrinth.com/mod/qsSP2ZZ0">
@@ -52,15 +52,19 @@
         </ul>
       </li>
       <li>
-        <a target="_blank" href="https://modrinth.com/mod/uCdwusMi">Distant Horizons</a> by James Seibel,
-        Leonardo Amato, Cola, coolGi, Ran, Leetom, pshsh
+        <a target="_blank" href="https://modrinth.com/mod/uCdwusMi">Distant Horizons</a> [3.3.2] by James
+        Seibel, Leonardo Amato, Cola, coolGi, Ran, Leetom, pshsh
       </li>
       <li>
-        <a target="_blank" href="https://modrinth.com/mod/vETxChiy">Headpat a Friend!</a> by enjarai
+        <a target="_blank" href="https://modrinth.com/mod/vETxChiy">Headpat a Friend!</a> [1.0.7+26.2]
+        by enjarai
       </li>
-      <li><a target="_blank" href="https://modrinth.com/mod/nvQzSEkH">Jade</a> by Snownee</li>
       <li>
-        <a target="_blank" href="https://modrinth.com/mod/u6dRKJwZ">Just Enough Items</a> by mezz
+        <a target="_blank" href="https://modrinth.com/mod/nvQzSEkH">Jade</a> [26.2.11+fabric] by Snownee
+      </li>
+      <li>
+        <a target="_blank" href="https://modrinth.com/mod/u6dRKJwZ">Just Enough Items</a> [30.38.0.230]
+        by mezz
       </li>
       <li>
         <a target="_blank" class="text-cyan-500" href="https://modrinth.com/mod/XoHTb2Ap">CalcMod</a
