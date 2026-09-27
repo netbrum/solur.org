@@ -1,11 +1,20 @@
 <script lang="ts">
   import { resolve } from "$app/paths";
-  import banner from "$lib/assets/banner.avif";
   import wave from "$lib/assets/chibi-netbrum-1024-wave.gif";
   import NewsletterPreview from "$lib/components/newsletter-preview.svelte";
 
   let { data } = $props();
 </script>
+
+<svelte:head>
+  <title>Solur</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Solur" />
+  <meta property="og:title" content="Solur" />
+  <meta property="og:description" content="This is a laid-back, long term Minecraft project" />
+  <meta property="og:url" content="https://solur.org" />
+  <meta property="og:image" content="https://solur.org/banner.avif" />
+</svelte:head>
 
 <div class="relative">
   {#if !data.wonderland}
@@ -16,7 +25,7 @@
     ></a>
   {/if}
   <img
-    src={banner}
+    src="/banner.avif"
     alt="Banner featuring multiple minecraft screenshots"
     class="brightness-40 select-none"
     fetchpriority="high"

@@ -20,6 +20,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>Gallery</title>
+</svelte:head>
+
 <section class="grow px-4 py-16">
   <div class="mx-auto prose w-full max-w-7xl prose-invert">
     <h2 class="text-center">Gallery</h2>

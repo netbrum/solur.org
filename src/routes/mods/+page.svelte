@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>Mods</title>
+</svelte:head>
+
 <section class="grow px-4 py-16">
   <div class="mx-auto prose w-full max-w-4xl prose-invert">
     <header class="text-center">

@@ -30,6 +30,7 @@ export type NewsPreview = {
 export type News = {
   id: string;
   title: string;
+  preview: string;
   content: string;
   published_at: string;
 };

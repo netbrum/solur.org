@@ -4,6 +4,10 @@
   let { data } = $props();
 </script>
 
+<svelte:head>
+  <title>Newsletter</title>
+</svelte:head>
+
 <section class="grow px-4 py-16">
   <div class="mx-auto prose w-full max-w-4xl prose-invert">
     <h2 class="text-center">Newsletter</h2>
