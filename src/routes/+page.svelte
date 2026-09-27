@@ -1,6 +1,8 @@
 <script lang="ts">
   import { resolve } from "$app/paths";
   import wave from "$lib/assets/chibi-netbrum-1024-wave.gif";
+  import vine from "$lib/assets/vine.png";
+  import bee from "$lib/assets/bee.gif";
   import NewsletterPreview from "$lib/components/newsletter-preview.svelte";
 
   let { data } = $props();
@@ -43,11 +45,19 @@
   <img
     src={wave}
     alt="Chibi character waving"
-    class="absolute bottom-0 left-0 size-32 translate-y-1/3 md:size-64"
+    class="absolute bottom-0 left-0 z-100 size-32 translate-y-1/3 md:size-64"
   />
 </div>
 
-<section class="grow bg-white px-4 py-16 text-black">
+<section class="relative grow bg-white px-4 py-16 text-black">
+  <div class="hidden xl:block">
+    <img src={vine} alt="Vine" class="absolute top-0 left-13 z-50" />
+    <img src={vine} alt="Vine" class="absolute top-32 left-13 z-50" />
+    <img src={vine} alt="Vine" class="absolute top-64 left-13 z-50" />
+    <img src={vine} alt="Vine" class="absolute top-96 left-13 z-50" />
+    <img src={vine} alt="Vine" class="absolute top-128 left-13 z-50" />
+    <img src={vine} alt="Vine" class="absolute top-160 left-13 z-50" />
+  </div>
   <div class="mx-auto prose w-full max-w-4xl">
     <h1 class="mb-0!">Solur</h1>
     <p>
@@ -70,7 +80,12 @@
   </div>
 </section>
 
-<section class="bg-emerald-800 px-4 py-16 text-white">
+<section class="relative bg-emerald-800 px-4 py-16 text-white">
+  <img
+    src={bee}
+    alt="Bee flying around"
+    class="pointer-events-none absolute top-0 right-15 -translate-y-1/2"
+  />
   <div
     class="mx-auto prose-xl grid w-full max-w-4xl grid-cols-1 place-items-center items-start md:grid-cols-2"
   >
