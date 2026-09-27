@@ -94,8 +94,11 @@
       {/await}
     </div>
     <div>
-      <h3 class="mb-0!">Mods</h3>
+      <h3 class="mb-0!">Mods*</h3>
       <ul class="text-base [&>li>a]:underline">
+        <li>
+          <a target="_blank" href="https://modrinth.com/mod/P7dR8mSH">Fabric API</a> by FabricMC
+        </li>
         <li>
           <a target="_blank" href="https://modrinth.com/mod/9dzLWnmZ">Camerapture</a> by chrrrs
         </li>
@@ -106,15 +109,13 @@
           <a target="_blank" href="https://modrinth.com/mod/YOs4tZea">Joy of Painting</a> by xerca
         </li>
         <li>
-          <a target="_blank" href="https://modrinth.com/mod/9eGKb6K1">Simple Voice Chat</a> by Max Henkel
-        </li>
-        <li>
           <a target="_blank" href="https://modrinth.com/mod/LOpKHB2A">Waystones</a> by BlayTheNinth
         </li>
-        <li>
-          <a target="_blank" href="https://modrinth.com/mod/P7dR8mSH">Fabric API</a> by FabricMC
-        </li>
       </ul>
+      <small>
+        * Required mods only,
+        <a class="underline" href={resolve("/mods")}>see all mods</a>
+      </small>
     </div>
   </div>
 </section>
