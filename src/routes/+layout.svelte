@@ -11,8 +11,6 @@
 
 <svelte:head>
   <link rel="icon" href={favicon} />
-  <title>Solur</title>
-  <meta name="description" content="This is a laid-back, long term Minecraft project" />
 </svelte:head>
 
 <div class="flex min-h-screen flex-col bg-mist-900 text-white">

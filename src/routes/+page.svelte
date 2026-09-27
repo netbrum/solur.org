@@ -8,10 +8,17 @@
 
 <svelte:head>
   <title>Solur</title>
+  <meta
+    name="description"
+    content="This is a laid-back, long term Minecraft project that focuses on the nostalgia you get by having the same world for many years"
+  />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Solur" />
   <meta property="og:title" content="Solur" />
-  <meta property="og:description" content="This is a laid-back, long term Minecraft project" />
+  <meta
+    property="og:description"
+    content="This is a laid-back, long term Minecraft project that focuses on the nostalgia you get by having the same world for many years"
+  />
   <meta property="og:url" content="https://solur.org" />
   <meta property="og:image" content="https://solur.org/banner.avif" />
 </svelte:head>
