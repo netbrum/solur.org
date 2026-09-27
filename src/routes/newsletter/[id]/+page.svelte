@@ -20,6 +20,9 @@
   {#if firstImage}
     <meta property="og:image" content={`https://solur.org${firstImage.src}`} />
     <meta property="og:image:alt" content={firstImage.alt} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
   {/if}
 </svelte:head>
 

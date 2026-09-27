@@ -20,7 +20,10 @@
     content="This is a laid-back, long term Minecraft project that focuses on the nostalgia you get by having the same world for many years"
   />
   <meta property="og:url" content="https://solur.org" />
-  <meta property="og:image" content="https://solur.org/banner.avif" />
+  <meta property="og:image" content="https://solur.org/ogbanner.avif" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="relative">
